@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Board from './noughts-and-crosses';
+
+function MyButton() {
+  const [ clicked, setClicked ] = useState(false);
+  function onClick(e) {
+    if (!clicked) return;
+    e.stopPropagation();
+    setClicked(true);
+  }
+  return (
+    <button onClick={onClick}>Let's play!</button>
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Let's play Noughts and Crosses</h1>
+      <MyButton />
+      <Board />
     </div>
   );
 }
 
 export default App;
+
