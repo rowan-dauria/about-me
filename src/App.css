@@ -32,9 +32,27 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  display: flex;
+}
+li > button {
+  align-self: center;
+}
+
+.game {
+  margin: 20px;
 }
 
 .board {

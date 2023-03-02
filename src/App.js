@@ -2,24 +2,24 @@ import { useState } from 'react';
 import './App.css';
 import Board from './noughts-and-crosses';
 
-function MyButton() {
-  const [ clicked, setClicked ] = useState(false);
-  function onClick(e) {
-    if (!clicked) return;
-    e.stopPropagation();
-    setClicked(true);
-  }
+function MyButton({ onClick }) {
+
   return (
     <button onClick={onClick}>Let's play!</button>
   );
 }
 
 function App() {
+  const [showNC, setShowNC] = useState(false);
+  function onClick() {
+    if (showNC) return;
+    setShowNC(true);
+  }
   return (
     <div className="App">
       <h1> Let's play Noughts and Crosses</h1>
-      <MyButton />
-      <Board />
+      <MyButton onClick={onClick} />
+      {showNC ? <Board /> : null}
     </div>
   );
 }
