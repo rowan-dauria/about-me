@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Board from './noughts-and-crosses';
+import Container from './AudioVisualiser';
 
 function MyButton({ onClick }) {
 
@@ -20,6 +21,7 @@ function App() {
       <h1> Let's play Noughts and Crosses</h1>
       <MyButton onClick={onClick} />
       {showNC ? <Board /> : null}
+      <Container/>
     </div>
   );
 }
