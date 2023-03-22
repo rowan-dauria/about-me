@@ -1,17 +1,16 @@
-import { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Board from './noughts-and-crosses';
 import Container from './AudioVisualiser';
 
 function MyButton({ onClick }) {
-
   return (
     <button onClick={onClick}>Let's play!</button>
   );
 }
 
 function App() {
-  const [showNC, setShowNC] = useState(false);
+  const [showNC, setShowNC] = ReactuseState(false);
   function onClick() {
     if (showNC) return;
     setShowNC(true);
