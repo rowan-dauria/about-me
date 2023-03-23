@@ -39,6 +39,30 @@ function Initial({ date }) {
   );
 }
 
+function Help() {
+  return (
+    <p>
+      Available commands are:
+      <br />
+      - about
+      <br />
+      - education
+      <br />
+      - experience
+      <br />
+      - help
+    </p>
+  );
+}
+
+function Education() {
+  return (
+    <p>
+      University of Durham, Physics BSc, First
+    </p>
+  );
+}
+
 function About() {
   return (
     <div>
@@ -94,13 +118,13 @@ export default function Terminal() {
     historyClone.push({ type: 'prior-input', details: string, id: historyClone.length });
     switch (string) {
       case 'help':
-        historyClone.push({ type: 'help', details: 'Available commands are:\n - help\n - about\n - experience', id: historyClone.length });
+        historyClone.push({ type: 'help', details: Help(), id: historyClone.length });
         break;
       case 'about':
         historyClone.push({ type: 'about', details: About(), id: historyClone.length });
         break;
       case 'education':
-        historyClone.push({ type: 'education', details: 'University of Durham, Physics BSc, First', id: historyClone.length });
+        historyClone.push({ type: 'education', details: Education(), id: historyClone.length });
         break;
       case 'experience':
         historyClone.push({ type: 'experience', ...EXPERIENCE, id: historyClone.length });
