@@ -1,0 +1,90 @@
+/* took inspo from https://css-tricks.com/old-timey-terminal-styling/ */
+/* Had to change the ::after background because it used an outdated version of the rgb() function that Chrome won't accept now.*/
+
+.terminal-container {
+    /* used to hide the ::after pseudoelement creating the screen lines */
+    overflow: hidden;
+    position: relative; 
+}
+
+.terminal {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+  overflow-y: scroll;
+
+  /* hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* hide scrollbar */
+.terminal::-webkit-scrollbar {
+    display: none;
+}
+
+.terminal::after {
+  pointer-events: none;  
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: repeating-linear-gradient(0deg,
+    rgb(0 0 0 / 0.15),
+    rgb(0 0 0 / 0.15) 1px,
+    transparent 1px,
+    transparent 2px);
+}
+
+.terminal,
+.terminal input {
+  color: #C8C8C8;
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+
+  flex-grow: 1;
+}
+
+.input-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.prior-input.history-item span,
+.input-line span {
+    color: rgb(255, 255, 162);
+    text-shadow: 0 0 5px rgb(255, 255, 162);
+    margin-right: 10px;
+}
+
+.history-item {
+    white-space: pre-wrap;
+}
+
+.history-item a {
+    color: skyblue;
+    text-shadow: 0 0 5px skyblue;
+    height: max-content;
+    width: max-content;
+    margin: .5em;
+}
+
+.history-item.about * img {
+    width: 25vw;
+    height: auto;
+}
+
+input {
+  caret-shape: block;  
+
+  padding: 0; 
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
