@@ -1,4 +1,4 @@
 {
     "extends": "airbnb",
-    "ignorePatterns": ["src/index.js"]
+    "ignorePatterns": ["src/index.js", "src/reportWebVitals.js"]
 }
