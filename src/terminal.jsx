@@ -67,12 +67,16 @@ function About() {
   return (
     <div>
       <p>
-        Hi, my name is Rowan. I&apos;m a fullstack developer looking for new opportunities to grow.
-        I&apos;ve worked as a fullstack engineer at
+        Hi, my name is Rowan. I&apos;m a fullstack engineer looking for new opportunities to grow.
+        I&apos;ve spent the last 14 months building the
         <a href="https://luminance.com" target="_blank" rel="noopener noreferrer">Luminance</a>
-        for over a year.
+        app.
       </p>
       <img src={pic} alt="Me" />
+      <p>
+        <a href="https://www.linkedin.com/in/rowan-d-auria/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.github.com/rowan-dauria" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
     </div>
   );
 }
