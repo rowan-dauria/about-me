@@ -4,26 +4,60 @@ import pic from './media/me.jpg';
 
 const SHELL_PROMPT = '→$';
 
-const EXPERIENCE = {
-  from: 'Feb 2022',
-  to: 'April 2023',
-  Title: 'Software Developer',
-  at: 'Luminance AI',
-  details: 'Details \ngo \nhere',
-};
+function Experience() {
+  return (
+    <p>
+      Feb 2022 - April 2023    Software Developer at Luminance
+      <br />
+      - Fullstack engineer for AI contract management platform. Used by
+      <strong> Tesco</strong>
+      ,
+      <strong> Clifford Chance </strong>
+      and more.
+      <br />
+      - Promoted twice after less than a year in the role.
+      <br />
+      - Led the development of an interactive data dashboard using
+      <strong> BackboneJS </strong>
+      (frontend framework) and
+      <strong> ElasticSearch </strong>
+      for Luminance&apos;s flagship product,
+      implementing a configurable interface that provides a qualitative overview
+      of the client&apos;s data.
+      <br />
+      - Created a range of new API functionality in
+      <strong> ExpressJS </strong>
+      to secure Luminance&apos;s largest ever deal. Took ownership of the whole
+      development lifecycle by designing and implementing API tests with
+      <strong> MochaJS</strong>
+      .
+      <br />
+      - Delivered time-pressured fixes for frontend and backend bugs. Solved a
+      frontend bug that had been outstanding for over 6 months, receiving a bug bounty
+      as a result.
+      <br />
+      - Took ownership of feature development, utilising Gitlab to manage
+      parallel workstreams and implement CI/CD pipelines.
+      <br />
+      <br />
+      June 2021 - Feb 2022    Technology Specialist at Luminance
+      <br />
+      - Managed client data migrations from legacy systems, automating data exports,
+      providing 2nd level support for technical issues.
+      <br />
+      - Was recommended for a software development role due to exceptional performance
+      as a Technology Specialist.
+      <br />
+      - Scripting for the internal
+      <strong> Python </strong>
+      API to automate data cleaning processes. Was the internal API expert whilst in the team.
+      <br />
+      - Automated data extraction exercises, engaging with clients to understand their reporting
+      needs and delivering bespoke reports.
+    </p>
+  );
+}
 
-// const ABOUT = {
-//   details: 'Hi, my name is Rowan. I am a fullstack developer
-// looking for new opportunities to grow. I\'ve worked as a fullstack engineer for over a year.',
-// };
-
-// function Experience() {
-//   return (
-//     <p>
-
-//     </p>
-//   );
-// }
 /* eslint-disable react/prop-types */
 function Initial({ date }) {
   return (
@@ -131,7 +165,7 @@ export default function Terminal() {
         historyClone.push({ type: 'education', details: Education(), id: historyClone.length });
         break;
       case 'experience':
-        historyClone.push({ type: 'experience', ...EXPERIENCE, id: historyClone.length });
+        historyClone.push({ type: 'experience', details: Experience(), id: historyClone.length });
         break;
       default:
         historyClone.push({ type: 'exception', details: 'Error: Unexpected input. Type "help" for available commands', id: historyClone.length });
