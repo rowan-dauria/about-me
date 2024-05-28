@@ -7,6 +7,20 @@ const SHELL_PROMPT = '→$';
 function Experience() {
   return (
     <p>
+      June 2023 - Oct 2023    Software Developer at Featurespace
+      <br />
+      - Engineer delivering the top fraud detection product for banks and payment providers.
+      <br />
+      - Worked on greenfield projects with minimal oversight after 2 months in the team.
+      <br />
+      - Owned the development of a
+      <strong> Kubernetes </strong>
+      based cloud storage solution, enabling dynamic database creation for QA builds.
+      <br />
+      - Rapidly investigated problems outside my experience to deliver upgrades,
+      ensuring another team met external deadlines.
+      <br />
+      <br />
       Feb 2022 - April 2023    Software Developer at Luminance
       <br />
       - Fullstack engineer for AI contract management platform. Used by
@@ -101,10 +115,12 @@ function About() {
   return (
     <div>
       <p>
-        Hi, my name is Rowan. I&apos;m a fullstack engineer looking for new opportunities to grow.
-        I&apos;ve spent the last 14 months building the
+        Hi, my name is Rowan. I&apos;m a fullstack engineer with experience at
         <a href="https://luminance.com" target="_blank" rel="noopener noreferrer">Luminance</a>
-        app.
+        &amp;
+        <a href="https://featurespace.com" target="_blank" rel="noopener noreferrer">Featurespace</a>
+        . After taking a career break to travel, I am looking
+        for a new team and exciting projects to own.
       </p>
       <img src={pic} alt="Me" />
       <p>
