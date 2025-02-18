@@ -106,7 +106,13 @@ function Help() {
 function Education() {
   return (
     <p>
-      University of Durham, Physics BSc, First
+      2025-2026: University of Cambridge, Data Intensive Science MPhil
+      <br />
+      <br />
+      2025: MIT, Applied Data Science Certificate
+      <br />
+      <br />
+      2017-2020: University of Durham, Physics BSc, First
     </p>
   );
 }
@@ -115,12 +121,22 @@ function About() {
   return (
     <div>
       <p>
-        Hi, my name is Rowan. I&apos;m a fullstack engineer with experience at
+        Hi, my name is Rowan. I&apos;m a former software engineer at
         <a href="https://luminance.com" target="_blank" rel="noopener noreferrer">Luminance</a>
         &amp;
         <a href="https://featurespace.com" target="_blank" rel="noopener noreferrer">Featurespace</a>
-        . After taking a career break to travel, I am looking
-        for a new team and exciting projects to own.
+        currently transitioning into data science. Right now, I&apos;m mastering commercial
+        data science through the
+        <a
+          href="https://professional.mit.edu/course-catalog/applied-data-science-program-leveraging-ai-effective-decision-making"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MIT Applied Data Science Course
+        </a>
+        and have accepted an offer to study
+        <a className="no-right-margin" href="https://mphildis.bigdata.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Data Science at Cambridge</a>
+        .
       </p>
       <img src={pic} alt="Me" />
       <p>
