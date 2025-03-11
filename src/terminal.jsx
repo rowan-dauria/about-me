@@ -121,22 +121,12 @@ function About() {
   return (
     <div>
       <p>
-        Hi, my name is Rowan. I&apos;m a former software engineer at
+        Hi, my name is Rowan. I&apos;m a fullstack engineer with experience at
         <a href="https://luminance.com" target="_blank" rel="noopener noreferrer">Luminance</a>
         &amp;
         <a href="https://featurespace.com" target="_blank" rel="noopener noreferrer">Featurespace</a>
-        currently transitioning into data science. Right now, I&apos;m mastering commercial
-        data science through the
-        <a
-          href="https://professional.mit.edu/course-catalog/applied-data-science-program-leveraging-ai-effective-decision-making"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          MIT Applied Data Science Course
-        </a>
-        and have accepted an offer to study
-        <a className="no-right-margin" href="https://mphildis.bigdata.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Data Science at Cambridge</a>
-        .
+        . After taking a career break to travel, I am looking
+        for a new team and exciting projects to own.
       </p>
       <img src={pic} alt="Me" />
       <p>
