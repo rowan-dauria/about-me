@@ -106,12 +106,6 @@ function Help() {
 function Education() {
   return (
     <p>
-      2025-2026: University of Cambridge, Data Intensive Science MPhil
-      <br />
-      <br />
-      2025: MIT, Applied Data Science Certificate
-      <br />
-      <br />
       2017-2020: University of Durham, Physics BSc, First
     </p>
   );
